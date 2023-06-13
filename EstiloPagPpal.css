@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+.portada{
+    color: rgb(15, 15, 15);
+    opacity: 0.75;
+    position:center;
+    Backdrop-filter: blur(6px);
+}
+
+.zoom{
+    /* Aumentamos la anchura y altura durante 2 segundos */
+    transition: width 2s, height 2s, transform 1s;
+}
+.zoom:hover{
+    /* tranformamos el elemento al pasar el mouse por encima al doble de
+       su tamaño con scale(2). */
+    transform : scale(2);
+}
+
