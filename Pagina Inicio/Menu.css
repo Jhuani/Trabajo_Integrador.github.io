@@ -1,0 +1,99 @@
+
+.cabezal {
+    width: auto;
+    height: auto;
+    background-image: url('../potrero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: visible;
+    border: 5px solid whitesmoke;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabezal2 {
+    color: white;
+    display:flexbox;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color: #333;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 2;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.reloj {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconos-redes {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+}
+
+.pie-pagina {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    color: white;
+}

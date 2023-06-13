@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGENTINA TRAVEL CO.</title>
+    <link rel="shortcut icon" href="logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Menu.css">
+    <script>
+        function startTime() {
+            today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout('startTime()', 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+    <script>
+        function mostrarFecha() {
+            var fechaActual = new Date();
+            var opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+            document.getElementById("fecha").innerHTML = fechaFormateada;
+        }
+    </script>
+    <script>
+        let array = ["media/ballenaspuertomadrynchubutargentina.jpg", "media/cataratasdeliguazumisionesargentina.jpg", "media/glaciarperitomorenocalafatepatagoniaargentina.jpg", "media/purmamarcasaltaargentina.jpg"];
+        cont = 0;
+        function anterior() {
+            if (cont == 0) {
+                cont = 3;
+            } else {
+                cont--;
+            }
+            imag.src = array[cont];
+        }
+        function siguiente() {
+            if (cont == 3) {
+                cont = 0;
+            } else {
+                cont++;
+            }
+            imag.src = array[cont];
+        }
+    </script>
+</head>
+<a name="arriba"></a>
+<div class="cabezal">
+    <img src="logo1.jpg" alt="LOGO" width="350" height="250" style="float: left;">
+    <div>
+        <h1
+            style="font-family: 'Lucida Sans'; text-align: center; font-size: 75px; color: white;-webkit-text-stroke: 2px black">
+            ¡TUS PROXIMAS VACACIONES ESTAN AQUI! </h1>
+    </div>
+</div>
+
+<body onload="mostrarFecha(); startTime()" style="background-color: white;">
+    <div class="cabezal2">
+        <div class="datos fecha" style="font-size: 30px;">
+            <div id="fecha">
+            </div>
+            <div id="reloj">
+            </div>
+            <div id="reproductor">
+                <audio controls src="../media/Pagina.mp3" type="mp3" autoplay></audio>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <p class="logo"> </p>
+            <ul class="menu" style="font-size: 25px;">
+                <li><a href="../../Inicio.html">Home</a></li>
+                <li><a href="../../quienes-somos/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="../../preguntas-frecuentes/preguntas.html">Preguntas Frecuentes</a></li>
+                <li><a href="../../promos/promos.html">Promos</a></li>
+                <li><a href="../../destinos/destinos.html" class="active">Destinos</a></li>
+                <li><a href="../../pagos/pagos.html">Medios de Pago</a></li>
+                <li><a href="../../contacto/contacto.html">Contactos</a></li>
+                <li><a href="../../sumate/sumate.html">¡Sumate a nuestro equipo!</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <div class="contenido">
+        <br>
+        <div class="pais">
+            <h2>ARGENTINA</h2>
+            <h3><span><span></h3>
+            <div class="destino">
+                <div class="imagen"></div>
+                <img src="../media/MDP.jpg" alt="Mar del Plata" width="300px" height="300px">
+                <div class="detalle">
+                    <p> <b>03 NOCHES | MAR DEL PLATA | 05 ENERO 24</b>
+                    <p><b>DETALLES:</b></p>
+                    Duración: 5 Días 3 Noches Bus MIX
+                    Alojamiento: Hotel BOULERVARD
+                    Régimen: Media Pensión
+                    Asistencia Medica
+                    OPCIONAL
+
+                    Recargo CAMA $3000
+                    Butaca Panorámica o cafetera $1500
+                    Habitación Single 60%
+                    CONSULTE LUGARES DE SALIDA
+                    POLITICA DE MENORES
+
+                    Menor de 0 A 2 AÑOS solo asistencia $2000
+                    Menor de 3 a 5 años butaca + asistencia $18000
+                    Menor de 5 años en adelante abona como adulto
+                    * NO INCLUYE EXTRAS COMO BEBIDAS, IMPUESTOS A PARQUES NACIONALES, MONUMENTOS HISTORICOS Y ENTRADAS A
+                    COMPLEJOS.
+                    </p>
+                </div>
+            </div>
+            <div class="destino-contacto">
+                <div class="precio" style="display: flex; margin-right: 250px; font-size: 35px;">
+                    <p><b>$69.900</b></p>
+                </div>
+                <div class="info" style="margin-left: 50px;">
+                    <p><a href="../../contacto/contacto.html" target="_blank"><img src="../media/masinfo.png"
+                                alt="mas-info" width="50px" height="50px"></a></p>
+                </div>
+                <div class="wsp" style="margin-left: 50px;">
+                    <p><a href="https://api.whatsapp.com/" target="_blank"><img src="../media/wsp.png" alt="mas-info"
+                                width="50px" height="50px"></a></p>
+                </div>
+                <div class="telegram" style="margin-left: 50px;">
+                    <p><a href="https://telegram.org/" target="_blank"><img src="../media/telegram.png" alt="mas-info"
+                                width="50px" height="50px"></a></p>
+                </div>
+            </div>
+        </div>
+        <h3></h3>
+        <div class="destino">
+            <div class="imagen"></div>
+            <img src="../media/cataratas.jpg" alt="Cataratas" width="300px" height="300px">
+            <div class="detalle">
+                <p> <b>Cataratas del Iguazú | 15 de junio</b>
+                <p><b>DETALLES:</b></p>
+                Duración: 5 Días 3 Noches -FINDE XXL
+                Alojamiento: Hotel Bagu Foz
+                Régimen: Media Pensión
+                Recorremos: Traslados a Minas de Wanda, Ruinas de San Ignacio y Parque Nacional Iguazú Argentina
+                Coordinador en ruta y destino
+                Asistencia Medica
+                OPCIONAL
+
+                Recargo CAMA $4000
+                Butaca Panorámica o cafetera $1500
+                Habitación Single 60%
+                CONSULTE LUGARES DE SALIDA
+                POLITICA DE MENORES
+
+                Menor de 0 A 2 AÑOS solo asistencia $1500
+                Menor de 3 a 5 años butaca + asistencia $29000
+                Menor de 5 años en adelante abona como adulto
+                * NO INCLUYE EXTRAS COMO BEBIDAS, IMPUESTOS A PARQUES NACIONALES, MONUMENTOS HISTORICOS Y ENTRADAS A
+                COMPLEJOS.
+
+                *AL VALOR FINAL SUMARLE 5% DE GASTOS ADMINISTRATIVOS*
+                </p>
+            </div>
+        </div>
+        <div class="destino-contacto">
+            <div class="precio" style="display: flex; margin-right: 250px; font-size: 35px;">
+                <p><b>$83.600</b></p>
+            </div>
+            <div class="info">
+                <p><a href="../../contacto/contacto.html" target="_blank"><img src="../media/masinfo.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="wsp" style="margin-left: 50px;">
+                <p><a href="https://api.whatsapp.com/" target="_blank"><img src="../media/wsp.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="telegram" style="margin-left: 50px;">
+                <p><a href="https://telegram.org/" target="_blank"><img src="../media/telegram.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <h3></h3>
+        </div>
+        <h3></h3>
+        <div class="destino">
+            <div class="imagen"></div>
+            <img src="../media/Norte.jpg" alt="Humahuaca" width="300px" height="300px">
+            <div class="detalle">
+                <p> <b>ENCANTOS DEL NORTE | Salida 15 SEPTIEMBRE</b>
+                <p><b>DETALLES:</b></p>
+                Duración: 6 Días 4 Noches Bus MIX
+                Alojamiento: Hotel CRISTAL en Salta // Hostería La Coquena o similar en Humahuaca con régimen de
+                *desayuno*
+                Régimen: Desayuno
+                Recorremos: Tafí del Valle + Cuesta del Infiernillo + Cafayate con bodega + Quebrada de Las Conchas +
+                Purmamarca cerro de los 7 colores + Tilcara + Maimará + Quebrada de Humahuaca. *Incluye traslado al
+                Santuario de la Virgen de los tres Cerritos (Inmaculada Madre del Divino Corazón Eucarístico de Jesús).
+                Coordinador en ruta
+                Asistencia Medica
+                OPCIONAL
+
+                Recargo CAMA $4000
+                Habitación Single 60% adicional a la tarifa publicada
+                POLITICA DE MENORES
+
+                Menor de 0 A 2 AÑOS solo asistencia $1500
+                Menor de 3 a 5 años butaca + asistencia $35000
+                Menor de 5 años en adelante abona como adulto
+                *AL VALOR FINAL SUMARLE 5% DE GASTOS ADMINISTRATIVOS*
+                </p>
+            </div>
+        </div>
+        <div class="destino-contacto">
+            <div class="precio" style="display: flex; margin-right: 250px; font-size: 35px;">
+                <p><b>$110.900</b></p>
+            </div>
+            <div class="info">
+                <p><a href="../../contacto/contacto.html" target="_blank"><img src="../media/masinfo.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="wsp" style="margin-left: 50px;">
+                <p><a href="https://api.whatsapp.com/" target="_blank"><img src="../media/wsp.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="telegram" style="margin-left: 50px;">
+                <p><a href="https://telegram.org/" target="_blank"><img src="../media/telegram.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <h3></h3>
+        </div>
+        <h3></h3>
+        <div class="destino">
+            <div class="imagen"></div>
+            <img src="../media/las leñas.jpg" alt="Las Leñas" width="300px" height="300px">
+            <div class="detalle">
+                <p> <b>LAS LEÑAS /08-09-15-16-19 JULIO</b>
+                <p><b>DETALLES:</b></p>
+                INCLUYE
+
+                🚎Bus semi cama☕Desayuno a bordo + merienda chocolate caliente + Visita a regional + parada en Pozo de
+                las Ánimas (si las condiciones climáticas lo permiten)🧤⛄El equipo de nieve incluye enterito + guantes +
+                botas.
+                TENES OPCION SIN TRAJE
+                *AL VALOR FINAL SUMARLE 5% DE GASTOS ADMINISTRATIVOS*
+                </p>
+            </div>
+        </div>
+        <div class="destino-contacto">
+            <div class="precio" style="display: flex; margin-right: 250px; font-size: 35px;">
+                <p><b>$20.900</b></p>
+            </div>
+            <div class="info">
+                <p><a href="../../contacto/contacto.html" target="_blank"><img src="../media/masinfo.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="wsp" style="margin-left: 50px;">
+                <p><a href="https://api.whatsapp.com/" target="_blank"><img src="../media/wsp.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="telegram" style="margin-left: 50px;">
+                <p><a href="https://telegram.org/" target="_blank"><img src="../media/telegram.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <h3></h3>
+        </div>
+        <h3></h3>
+        <div class="destino">
+            <div class="imagen"></div>
+            <img src="../media/sieeras cordoba.jpg" alt="Cordoba" width="300px" height="300px">
+            <div class="detalle">
+                <p> <b>FINDE CORDOBÉS | 13 DE JULIO</b>
+                <p><b>DETALLES:</b></p>
+                Duración: 2 Días 1 Noche. Bus semi cama.
+                Alojamiento: Hotel La Casona en Santa Rosa de Calamuchita.
+                Régimen: Media Pensión
+                Recorremos: Traslados a Villa General Belgrano.
+                Coordinador en ruta y destino
+                Asistencia Medica
+                OPCIONAL
+
+                Visita a La Cumbrecita y visita a Dique Los Molinos
+                Habitación Single 60%
+                CONSULTE LUGARES DE SALIDA
+                *AL VALOR FINAL SUMARLE 5% DE GASTOS ADMINISTRATIVOS*
+                </p>
+            </div>
+        </div>
+        <div class="destino-contacto">
+            <div class="precio" style="display: flex; margin-right: 250px; font-size: 35px;">
+                <p><b>$25.000</b></p>
+            </div>
+            <div class="info">
+                <p><a href="../../contacto/contacto.html" target="_blank"><img src="../media/masinfo.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="wsp" style="margin-left: 50px;">
+                <p><a href="https://api.whatsapp.com/" target="_blank"><img src="../media/wsp.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <div class="telegram" style="margin-left: 50px;">
+                <p><a href="https://telegram.org/" target="_blank"><img src="../media/telegram.png" alt="mas-info"
+                            width="50px" height="50px"></a></p>
+            </div>
+            <h3></h3>
+        </div>
+
+    </div>
+    <h3></h3>
+    <a href="#arriba"><img src="../media/Flecha Arriba.png" alt="Principio" width="50px" height="50px"></a>
+</body>
+<footer>
+    <br>
+    <div class="iconos-redes">
+        <li><a href="http://www.facebook.com" target="_blank"><img src="../iconos/social_facebook_fb_35.png"
+                    alt="Facebook" width="50px" height="50px"></a></li>
+        <li><a href="http://www.instagram.com" target="_blank"><img src="../iconos/social_instagram_3.png"
+                    alt="Instagram" width="50px" height="50px"></a></li>
+        <li><a href="http://www.skype.com" target="_blank"><img src="../iconos/social_skype_34.png" alt="Skype"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.twitter.com" target="_blank"><img src="../iconos/social_Twitter_38.png" alt="Twitter"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.youtube.com" target="_blank"><img src="../iconos/social_youtube_23.png" alt="You Tube"
+                    width="50px" height="50px"></a></li>
+    </div>
+    <p>
+        Franquicias Argentina Travel Co. - Legajo Nro. 72919 Ministerio de Turismo de la Nación, propiedad de Lucero y
+        Asoc. - Suipacha 921(5700) San Luis , Argentina , Tel: (+54) 266-5020676.
+        El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+        gratuita
+        a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo
+        establecido
+        en el artículo 14, inciso 3 de la Ley Nº 25.326. La Dirección Nacional de Protección de Datos de Personas,
+        Órgano de
+        Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con
+        relación
+        al incumplimiento de las normas sobre protección de datos personales.
+    </p>
+    <div class="pie-pagina">
+        <h4>Todos los derechos reservados. Powered by Argentina Travel Co.</h4>
+        <div class="info-logos" style="justify-content: right;">
+            <li><a href="https://www.argentina.gob.ar/turismoydeportes" target="_blank"><img
+                        src="../media/qr-min-tur.png" alt="QR Ministerio Turismo"></a></li>
+            <li><a href="https://servicioscf.afip.gob.ar/publico/denuncias/denunciaCD.aspx" target="_blank"><img
+                        src="../media/AFIP.jpg" alt="AFIP-Su-Denuncia" width="50px" height="50px"></a></li>
+            <li><a href="https://www.argentina.gob.ar/aaip/datospersonales" target="_blank"><img
+                        src="../media/isologopublicas.jpg" alt="Proteccion de datos" width="50px" height="50px"></a>
+            </li>
+        </div>
+</footer>
+
+</html>

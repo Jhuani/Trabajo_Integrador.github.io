@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGENTINA TRAVEL CO.</title>
+    <link rel="shortcut icon" href="media/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Menu.css">
+    <script>
+        function startTime() {
+            today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout('startTime()', 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+    <script>
+        function mostrarFecha() {
+            var fechaActual = new Date();
+            var opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+            document.getElementById("fecha").innerHTML = fechaFormateada;
+        }
+    </script>
+    <script>
+        let array = ["media/ballenaspuertomadrynchubutargentina.jpg", "media/cataratasdeliguazumisionesargentina.jpg", "media/glaciarperitomorenocalafatepatagoniaargentina.jpg", "media/purmamarcasaltaargentina.jpg"];
+        cont = 0;
+        function anterior() {
+            if (cont == 0) {
+                cont = 3;
+            } else {
+                cont--;
+            }
+            imag.src = array[cont];
+        }
+        function siguiente() {
+            if (cont == 3) {
+                cont = 0;
+            } else {
+                cont++;
+            }
+            imag.src = array[cont];
+        }
+    </script>
+</head>
+<div class="cabezal">
+    <img src="media/logo1.jpg" alt="LOGO" width="350" height="250" style="float: left;">
+    <div>
+        <h1 style="font-family: 'Lucida Sans'; text-align: center; font-size: 75px; color: white;-webkit-text-stroke: 2px black">
+            ¡TUS PROXIMAS VACACIONES ESTAN AQUI! </h1>
+    </div>
+</div>
+<body onload="mostrarFecha(); startTime()" style="background-color: gray;">
+    <div class="cabezal2">
+        <div class="datos fecha" style="font-size: 30px;">
+            <div id="fecha">
+            </div>
+            <div id="reloj">
+            </div>
+            <div id="reproductor">
+                <audio controls src="media/Pagina.mp3" type="mp3" autoplay></audio>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <p class="logo"> </p>
+            <ul class="menu" style="font-size: 30px;">
+                <li><a href="Inicio.html" class="active">Home</a></li>
+                <li><a href="quienes-somos/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="preguntas-frecuentes/preguntas.html">Preguntas Frecuentes</a></li>
+                <li><a href="promos/promos.html">Promos</a></li>
+                <li><a href="destinos/destinos.html">Destinos</a></li>
+                <li><a href="pagos/pagos.html">Medios de Pago</a></li>
+                <li><a href="contacto/contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div style="display: flex; justify-content: center; border: black">
+        <button id="anterior" onclick="anterior()"
+            style="background-color: black; color: white; font-size: 25px;">Anterior</button>
+        <img id="imag" src="media/purmamarcasaltaargentina.jpg" alt="medio" width="1000px" height="600px">
+        <button id="siguiente" onclick="siguiente()"
+            style="background-color: black; color: white; font-size: 25px;">Siguiente</button>
+    </div>
+    
+</body>
+<footer>
+    <br>
+    <div class="iconos-redes">
+        <li><a href="http://www.facebook.com" target="_blank"><img src="iconos/social_facebook_fb_35.png" alt="Facebook"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.instagram.com" target="_blank"><img src="iconos/social_instagram_3.png" alt="Instagram"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.skype.com" target="_blank"><img src="iconos/social_skype_34.png" alt="Skype"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.twitter.com" target="_blank"><img src="iconos/social_Twitter_38.png" alt="Twitter"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.youtube.com" target="_blank"><img src="iconos/social_youtube_23.png" alt="You Tube"
+                    width="50px" height="50px"></a></li>
+    </div>
+    <p style="color:white">
+        Franquicias Argentina Travel Co. - Legajo Nro. 72919 Ministerio de Turismo de la Nación, propiedad de Lucero y
+        Asoc. - Suipacha 921(5700) San Luis , Argentina , Tel: (+54) 266-5020676.
+        El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+        gratuita
+        a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo
+        establecido
+        en el artículo 14, inciso 3 de la Ley Nº 25.326. La Dirección Nacional de Protección de Datos de Personas,
+        Órgano de
+        Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con
+        relación
+        al incumplimiento de las normas sobre protección de datos personales.
+    </p>
+    <div class="pie-pagina">
+        <h4>CopyRight© 1913- 2023 - Todos los derechos reservados - info@argentinatravel.com.ar</h4>
+        <div class="info-logos" style="justify-content: right;">
+            <li><a href="https://www.argentina.gob.ar/turismoydeportes" target="_blank"><img src="media/qr-min-tur.png"
+                        alt="QR Ministerio Turismo"></a></li>
+            <li><a href="https://servicioscf.afip.gob.ar/publico/denuncias/denunciaCD.aspx" target="_blank"><img
+                        src="media/AFIP.jpg" alt="AFIP-Su-Denuncia" width="50px" height="50px"></a></li>
+            <li><a href="https://www.argentina.gob.ar/aaip/datospersonales" target="_blank"><img
+                        src="media/isologopublicas.jpg" alt="Proteccion de datos" width="50px" height="50px"></a></li>
+        </div>
+</footer>
+
+</html>

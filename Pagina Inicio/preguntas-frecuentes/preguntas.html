@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGENTINA TRAVEL CO.</title>
+    <link rel="shortcut icon" href="media/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Menu.css">
+    <script src="preguntas-javascript.js"></script>
+    <script>
+        function startTime() {
+            today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout('startTime()', 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+    <script>
+        function mostrarFecha() {
+            var fechaActual = new Date();
+            var opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+            document.getElementById("fecha").innerHTML = fechaFormateada;
+        }
+    </script>
+    <script>
+        let array = ["media/ballenaspuertomadrynchubutargentina.jpg", "media/cataratasdeliguazumisionesargentina.jpg", "media/glaciarperitomorenocalafatepatagoniaargentina.jpg", "media/purmamarcasaltaargentina.jpg"];
+        cont = 0;
+        function anterior() {
+            if (cont == 0) {
+                cont = 3;
+            } else {
+                cont--;
+            }
+            imag.src = array[cont];
+        }
+        function siguiente() {
+            if (cont == 3) {
+                cont = 0;
+            } else {
+                cont++;
+            }
+            imag.src = array[cont];
+        }
+    </script>
+</head>
+<a name="arriba"></a>
+<div class="cabezal">
+    <img src="../media/logo1.jpg" alt="LOGO" width="350" height="250" style="float: left;">
+    <div>
+        <h1
+            style="font-family: 'Lucida Sans'; text-align: center; font-size: 75px; color: white;-webkit-text-stroke: 2px black">
+            ¡TUS PROXIMAS VACACIONES ESTAN AQUI! </h1>
+    </div>
+</div>
+
+<body onload="mostrarFecha(); startTime()" style="background-color: gray;">
+    
+    <div class="cabezal2">
+        <div class="datos fecha" style="font-size: 30px;">
+            <div id="fecha">
+            </div>
+            <div id="reloj">
+            </div>
+            <div id="reproductor">
+                <audio controls src="../media/Pagina.mp3" type="mp3" autoplay></audio>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container-menu">
+            <p class="logo"> </p>
+            <ul class="menu" style="font-size: 25px;">
+                <li><a href="../Inicio.html">Home</a></li>
+                <li><a href="../quienes-somos/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="../preguntas-frecuentes/preguntas.html" class="active">Preguntas Frecuentes</a></li>
+                <li><a href="../promos/promos.html">Promos</a></li>
+                <li><a href="../destinos/destinos.html">Destinos</a></li>
+                <li><a href="../pagos/pagos.html">Medios de Pago</a></li>
+                <li><a href="../contacto/contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+    </header>
+    <a name="arriba"></a>
+    <div class="container">
+        <div class="row">
+            <div class="container1">
+                <div class="titulo">
+                    <h3>Preguntas Frecuentes</h3>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Necesito estar registrado para hacer efectiva una reserva? <span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>No es necesario. Podrás realizar tus compras en forma segura y sencilla sin tener que
+                            registrarte.
+                            Al momento de realizar la reserva es importante que revises que tus datos personales y
+                            de contacto estén correctos.
+                            .<span>R:</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>Confirmé una reserva online, ¿debo ponerme en contacto con Argentina Travel Co. para hacer
+                            efectiva
+                            la reserva?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Luego de haber ingresado tus datos, nuestro sistema le presentará una página de confirmación
+                            de reserva con un Código Localizador. Esto significa que tu reserva está finalizada. En
+                            breve recibirás un e-mail en la cuenta de correo que nos indicaste informándote la reserva
+                            realizada con la tarifa correspondiente.
+                            En las siguientes 24 horas, un asesor de viajes se contactará con vos para concluir el
+                            proceso de venta, acordando la forma de pago y entrega de documentación (pasajes y/o
+                            vouchers).
+                            Es necesario que controles los datos recibidos y, si encontrás información incorrecta, por
+                            favor comunícate con nosotros inmediatamente llamando al teléfono (+54) 266-5020676, de
+                            lunes a
+                            viernes de 9 a 19 horas, o sábados, domingos y feriados de 9 a 13 hs.<span>R:</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Necesito reconfirmar el horario de salida de mi vuelo?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Hay momentos excepcionales donde los horarios de los vuelos pueden sufrir variaciones por
+                            motivos ajenos a nuestra voluntad. Por ello, te recomendamos que confirmes la salida con
+                            nuestra agencia llamando al (+54) 266-5020676 con, al menos, 48 horas de anticipación.
+                            .<span>R:</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Es necesario hacer el Web Check-in previo a mi vuelo?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Realizar el Web Check-in entre 36 a 24 hs antes del vuelo asegura que se minimicen los
+                            tiempos de espera en aeropuertos y supone una importante comodidad para los pasajeros. Por
+                            lo que no es una obligación realizar el Web Check-in, pero si una excelente alternativa.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Cuál es el equipaje permitido para mi viaje?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Todos los pasajeros tienen derecho a llevar un equipaje de mano dentro de la cabina y
+                            despachar un equipaje en la bodega del avión. El peso y la cantidad de piezas permitidas
+                            dependerán de la línea aérea con la que realices tu vuelo, y de la ruta o tipo de pasaje que
+                            tengas, entre otras variables. Lo podrás chequear en detalle contactándote con la línea
+                            aérea.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>Si mi equipaje se extravía o llega dañado a destino, ¿cuál es el
+                            procedimiento?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Si llegaste a tu destino y tu equipaje se encuentra incompleto, dañado o extraviado, es
+                            esencial que contactes con el personal de Aeropuerto en la zona de retiro de equipaje. Es
+                            importante que formalices el reclamo con la línea aérea y la asistencia al viajero que hayas
+                            contratado, ya que ellos te acercarán las alternativas y pasos a seguir.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Puedo realizar cambios a mis viajes, en caso de ser necesario?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Pasajes aéreos: Los pasajes aéreos tienen restricciones impuestas por las líneas aéreas. Si
+                            adquiriste un pasaje, te invitamos a contactarte con un Asesor de Viajes para conocer las
+                            restricciones y multas a las que podés estar sujeto. La aerolínea no permite utilizar el
+                            pasaje de manera distinta a lo contratado, incluyendo el tratar de utilizar la vuelta de un
+                            vuelo, sin haber utilizado con anterioridad la ida.
+                            Si deseás un pasaje que te permita cambios o devoluciones, te pedimos consultes previamente
+                            a la confirmación de la reserva con un colaborador de Lozada Viajes por un pasaje que
+                            permita dicha flexibilidad, ya sea en cabina Económica, Ejecutiva o Primera. De esta forma,
+                            se simplifica el proceso de modificación.
+                            Hoteles y otros productos: Te solicitamos que te contactes con nuestros colaboradores al
+                            0800 555 6923 para consultar las posibilidades de realizar cambios en los hoteles u otros
+                            productos. Muchas veces también están sujetos a multa o restricciones impuestas por el
+                            proveedor.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Qué formas de pago puedo utilizar?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Las compras de nuestro sitio www.lozadaviajes.com se pueden pagar a través de tarjetas de
+                            crédito, transferencias y depósitos bancarios. Tené en cuenta que, en el caso de realizar un
+                            depósito, las tarifas no incluyen el gasto del 5% sobre la tarifa según RG Nº 3825 de AFIP.
+                            Te recomendamos contactarte al 0800 555 6923 o a info@lozadaiajes.com por cualquier consulta
+                            que pudiera surgir.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="pregunta">
+                        <h3>¿Qué es un Ticket Electrónico?<span>P:</span></h3>
+                    </div>
+                    <div class="respuesta">
+                        <p>Es un boleto o ticket aéreo que no requiere emisión en papel de los cupones de vuelo ya que
+                            es un registro en la base de datos de la compañía aérea. Este ticket electrónico contiene la
+                            misma información y fiabilidad que un pasaje impreso. Para volar, sólo es necesario
+                            presentarse en el counter de la compañía aérea con el Pasaporte (en caso de vuelos
+                            internacionales) o Documento Nacional válido de todos los viajeros (menores de edad
+                            incluidos) y el Código de Reserva (que te fue indicado en el correo electrónico de
+                            confirmación de tu reserva). Con estos datos, la compañía aérea te entregará tu tarjeta de
+                            embarque y podrás viajar.
+                            <span>R:</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="#arriba"><img src="../media/Flecha Arriba.png" alt="Principio" width="50px" height="50px"></a>
+</body>
+<footer>
+    <br>
+    <div class="iconos-redes">
+        <li><a href="http://www.facebook.com" target="_blank"><img src="../iconos/social_facebook_fb_35.png"
+                    alt="Facebook" width="50px" height="50px"></a></li>
+        <li><a href="http://www.instagram.com" target="_blank"><img src="../iconos/social_instagram_3.png"
+                    alt="Instagram" width="50px" height="50px"></a></li>
+        <li><a href="http://www.skype.com" target="_blank"><img src="../iconos/social_skype_34.png" alt="Skype"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.twitter.com" target="_blank"><img src="../iconos/social_Twitter_38.png" alt="Twitter"
+                    width="50px" height="50px"></a></li>
+        <li><a href="http://www.youtube.com" target="_blank"><img src="../iconos/social_youtube_23.png" alt="You Tube"
+                    width="50px" height="50px"></a></li>
+    </div>
+    <p>
+        Franquicias Argentina Travel Co. - Legajo Nro. 72919 Ministerio de Turismo de la Nación, propiedad de Lucero y
+        Asoc. - Suipacha 921(5700) San Luis , Argentina , Tel: (+54) 266-5020676.
+        El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma
+        gratuita
+        a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo
+        establecido
+        en el artículo 14, inciso 3 de la Ley Nº 25.326. La Dirección Nacional de Protección de Datos de Personas,
+        Órgano de
+        Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con
+        relación
+        al incumplimiento de las normas sobre protección de datos personales.
+    </p>
+    <div class="pie-pagina">
+        <h4>Todos los derechos reservados. Powered by Argentina Travel Co.</h4>
+        <div class="info-logos" style="justify-content: right;">
+            <li><a href="https://www.argentina.gob.ar/turismoydeportes" target="_blank"><img
+                        src="../media/qr-min-tur.png" alt="QR Ministerio Turismo"></a></li>
+            <li><a href="https://servicioscf.afip.gob.ar/publico/denuncias/denunciaCD.aspx" target="_blank"><img
+                        src="../media/AFIP.jpg" alt="AFIP-Su-Denuncia" width="50px" height="50px"></a></li>
+            <li><a href="https://www.argentina.gob.ar/aaip/datospersonales" target="_blank"><img
+                        src="../media/isologopublicas.jpg" alt="Proteccion de datos" width="50px" height="50px"></a>
+            </li>
+        </div>
+</footer>
+
+</html>
